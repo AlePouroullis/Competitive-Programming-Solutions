@@ -1,3 +1,4 @@
+// Solution by Alexandros Pouroullis
 /*
 Not the most efficient solution since it was unnecessary to create
 the 180 and 270 degree rotation functions, because you could just rotate

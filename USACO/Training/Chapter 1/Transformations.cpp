@@ -1,5 +1,9 @@
 /*
-Not the most efficient solution
+Not the most efficient solution since it was unnecessary to create
+the 180 and 270 degree rotation functions, because you could just rotate
+the square by 90 2 or 3 times to check if the second square is the first square
+rotated 180 or 270 degrees. In any case, a nice problem to practice one's implementation
+skills. 
 */
 
 /*

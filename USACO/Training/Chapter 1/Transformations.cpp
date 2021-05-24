@@ -8,7 +8,7 @@ skills.
 */
 
 /*
-ID: tranform
+ID: ---
 LANG: C++
 TASK: transform
 */

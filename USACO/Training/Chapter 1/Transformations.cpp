@@ -6,7 +6,6 @@ the square by 90 2 or 3 times to check if the second square is the first square
 rotated 180 or 270 degrees. In any case, a nice problem to practice one's implementation
 skills. 
 */
-
 /*
 ID: ---
 LANG: C++

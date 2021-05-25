@@ -1,4 +1,5 @@
-// Parts of the solution borrowed from Coding with Dongs' YouTube channel.
+// Solution mostly by Alexandros Pouroullis
+// Parts of the solution borrowed from Coding with Dong's YouTube channel.
 /*
 ID: ---
 LANG: C++

@@ -1,3 +1,9 @@
+// Solution by Alexandros Pouroullis
+/*
+Solves the problem by calculating all the possible permutations and inserting them into a set of tuples, thus
+eliminating repeated combinations as a result of the intersection between Farmer John's combination and the 
+master combination.
+*/
 /*
 ID: ---
 LANG: C++

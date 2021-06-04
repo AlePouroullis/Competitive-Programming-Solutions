@@ -39,7 +39,7 @@ int ans = 0, steps = 0;
 string directions;
 map<char, int> compass;
 int reserved[n*n-1];
-const int U = 0, D = 1, L = 2, R = 3;
+const int U = 0, D = 1, L = 2, R = 3, Q_mark = -1;
 
 void findPaths(int r, int c){
     if(r == n-1 && c == 0){
@@ -66,7 +66,7 @@ void findPaths(int r, int c){
 
     visited[r][c] = true;
 
-    if(reserved[steps] == -1){
+    if(reserved[steps] == Q_mark){
         if(r > 0 && !visited[r-1][c]){
             steps++;
             findPaths(r-1, c);
@@ -124,7 +124,7 @@ int main(){
 
     for(int i = 0; i < directions.length(); i++){
         if(directions[i] == '?')
-            reserved[i] = -1;
+            reserved[i] = Q_mark;
         else
             reserved[i] = compass[directions[i]];
     }

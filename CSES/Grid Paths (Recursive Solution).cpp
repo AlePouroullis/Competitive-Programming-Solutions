@@ -42,8 +42,11 @@ int reserved[n*n-1];
 const int U = 0, D = 1, L = 2, R = 3, Q_mark = -1;
 
 void findPaths(int r, int c){
+    // If in the bottom left corner
     if(r == n-1 && c == 0){
+	// If the path includes every block by taking the maximum number of steps.
         if(steps == n*n-1) ans++;
+	// Otherwise the solution cannot be found because you can't return to the final block subsequently.
         return;
     }
 
@@ -67,21 +70,25 @@ void findPaths(int r, int c){
     visited[r][c] = true;
 
     if(reserved[steps] == Q_mark){
+	// Up
         if(r > 0 && !visited[r-1][c]){
             steps++;
             findPaths(r-1, c);
             steps--;
         }
+	// Down
         if(r + 1 < n && !visited[r+1][c]){
             steps++;
             findPaths(r+1, c);
             steps--;
         }
+	// Left
         if(c > 0 && !visited[r][c-1]){
             steps++;
             findPaths(r, c-1);
             steps--;
         }
+	// Right
         if(c + 1 < n && !visited[r][c+1]){
             steps++;
             findPaths(r, c+1);

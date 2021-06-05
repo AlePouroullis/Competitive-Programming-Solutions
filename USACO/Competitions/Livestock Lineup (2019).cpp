@@ -20,7 +20,7 @@ bool selected[8] = {false};
 
 bool beside(string cow1, string cow2){
     int cow1_idx, cow2_idx;
-    for(int i = 0; i < temp.size(); i++){
+    for(int i = 0; i < 8; i++){
         if(temp[i] == cow1)
             cow1_idx = i;
         else if(temp[i] == cow2)

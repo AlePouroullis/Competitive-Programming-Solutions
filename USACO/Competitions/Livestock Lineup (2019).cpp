@@ -55,7 +55,6 @@ void solve(){
 
 int main(){
     cin >> n;
-    string toErase = " must be milked by";
     for(int i = 0; i < n; i++){
         string discard;
         cin >> X[i] >> discard >> discard >> discard >> discard >> Y[i];
